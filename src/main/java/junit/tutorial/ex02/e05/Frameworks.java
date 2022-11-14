@@ -13,5 +13,4 @@ public class Frameworks {
 			return false;
 		}
 	}
-
 }

@@ -32,7 +32,7 @@ class ItemStockTest {
 	void getNum() {
 		ItemStock itemStock = new ItemStock();
 		int result = itemStock.getNum(item);
-		assertEquals(0, result,"addメソッド(/item(0))は失敗です");
+		assertEquals(0, result,"getNumメソッド(/item(0))は失敗です");
 	}
 	
 	@Test
