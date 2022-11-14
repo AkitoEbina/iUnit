@@ -29,7 +29,21 @@ class StringUtilsTest {
 	@Test
 	void testSnakeCase() {
 		String result = StringUtils.toSnakeCase("aaa");
-		assertEquals("aaa", result,"toSnakeCase失敗");
+		assertEquals("aaa", result,"toSnakeCase(/aaa)失敗");
+		
+	}
+	
+	@Test
+	void testSnakeCase2() {
+		String result = StringUtils.toSnakeCase("HelloWorld");
+		assertEquals("hello_world", result,"toSnakeCase(/hello_world)失敗");
+		
+	}
+	
+	@Test
+	void testSnakeCase3() {
+		String result = StringUtils.toSnakeCase("practiceJunit");
+		assertEquals("practice_junit", result,"toSnakeCase(/practice_junit)失敗");
 		
 	}
 
